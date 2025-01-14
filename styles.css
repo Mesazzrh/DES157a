@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    width: 1200px;
+}
+
+#banner {
+    width: 1200px;
+    height: 250px;
+    position: absolute;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
