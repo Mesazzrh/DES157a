@@ -10,14 +10,58 @@ ul, li {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #E8E9EB;
     width: 1200px;
+    margin: auto;
+    animation: slide 0.8s ease-in-out;
+}
+
+@keyframes slide {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+header {
+    position: relative;
+}
+
+#headertexts {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    margin-top: 50px;
+    font-family: "Orbitron", serif;
+    font-weight: 900;
+    text-shadow: #E8E9EB 0px 0px 10px;
+}
+
+#headertexts h1 {
+    margin: 0;
+    font-size: 3rem;
+    transition: color 0.5s;
+}
+
+#headertexts h2 {
+    align-self: flex-end;
+    transition: color 0.5s;
+}
+
+#headertexts h1:hover, #headertexts h2:hover {
+    color: #E8E9EB;    
 }
 
 #banner {
-    width: 1200px;
-    height: 250px;
+    width: 100vw;
+    height: 200px;
     position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #313638;
 }
 
 a {
@@ -25,3 +69,49 @@ a {
     color: #333;
 }
 
+main {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0 30px 0;
+    background-color: #e0dfd5;
+    width: 80%;
+    margin: auto;
+    margin-top: 15%;
+    border-radius: 5px;
+    box-shadow: #313638 0px 0px 10px;
+}
+
+.lines {
+    background-color: #313638;
+    width: 5px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+section h2 {
+    font-family: "Orbitron", serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+section ul li a {
+    font-family: "Exo 2", serif;
+    font-weight: 400;
+    color: #F06543;
+    line-height: 1.5;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #313638;
+    color: #E8E9EB;
+    font-family: "Orbitron", serif;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
