@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 111, 0);
+    font-family: "Expletus Sans", serif;
+    font-weight: 500;
+}
+
+body {
+    width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    font-family: "Expletus Sans", serif;
+    font-weight: 700;
+    font-size: 4rem;
+    width: 80%;
+    margin: 50px auto;
+}
+
+nav {
+    margin-top: 52px;
+}
+
+nav li {
+    margin-bottom: 20px;
+}
+
+main {
+    width: 60%;
+    margin: auto;
+}
+
+#post1 h2 {
+    font-family: "Expletus Sans", serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0 0 20px 0;
+}
+
+#post1 p {
+    font-family: "Exo 2", serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+#flexcontainer {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 50px auto;
+}
