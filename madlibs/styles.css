@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+}
+
+img {
+    width: 35%;
+    max-width: 500px;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+article {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
