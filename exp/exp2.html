@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+    <style>
+        .result {
+            font-size: 20px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Experiment 2</h1>
+    <div id="output"></div>
+    <script>
+        // This program prompts the user for a number, performs some calculations, and displays the results on the page.
+
+        function getUserInput() {
+            var userInput = prompt("Enter a number: ");
+            var number = +userInput;
+            return number;
+        }
+
+        function generateRandomNumber() {
+            return Math.floor(Math.random() * 100);
+        }
+
+        function calculateSum(a, b) {
+            return a + b;
+        }
+
+        function displayResult(result) {
+            var outputDiv = document.querySelector("#output");
+            outputDiv.innerHTML = "The result is: " + result;
+            outputDiv.classList.add("result");
+        }
+
+        function main() {
+            var userNumber = getUserInput();
+            var randomNumber = generateRandomNumber();
+            var sum = calculateSum(userNumber, randomNumber);
+            displayResult(sum);
+        }
+
+        main();
+    </script>
+</body>
+</html>
