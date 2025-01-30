@@ -30,6 +30,7 @@ h1 {
 
 nav {
     margin-top: 52px;
+    flex: 1;
 }
 
 nav li {
@@ -39,21 +40,26 @@ nav li {
 main {
     width: 60%;
     margin: auto;
+    flex: 2;
 }
 
-#post1 h2 {
+article h2 {
     font-family: "Expletus Sans", serif;
     font-weight: 700;
     font-size: 1.5rem;
     margin: 0 0 20px 0;
 }
 
-#post1 p {
+article p {
     font-family: "Exo 2", serif;
     font-weight: 400;
     font-size: 1.1rem;
     line-height: 1.5;
     margin: 20px 0;
+}
+
+article {
+    margin-bottom: 100px;
 }
 
 #flexcontainer {
