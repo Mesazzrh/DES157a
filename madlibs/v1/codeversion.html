@@ -9,52 +9,73 @@
     <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <h1>Create Your Crazy Dream Mad Lib!</h1>
     <section id="word-gather-part">
         <h2>Please enter words corresponding to the prompt</h2>
-        <div id="cloud-background"></div>
-        <form>
+        <!-- <div id="cloud-background"></div> -->
+         <div id="stars">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+         </div>
+        <form id="madLibForm">
             <ol>
                 <li>
-                    <input type="text" id="input1" class="input" name="words" placeholder="a job name">
+                    <input type="text" id="input1" class="input" name="words" placeholder="a job name" required>
                 </li>
                 <li>
-                    <input type="text" id="input2" class="input" name="words" placeholder="adjective">
+                    <input type="text" id="input2" class="input" name="words" placeholder="adjective" required>
                 </li>
                 <li>
-                    <input type="text" id="input3" class="input" name="words" placeholder="place">
+                    <input type="text" id="input3" class="input" name="words" placeholder="place" required>
                 </li>
                 <li>
-                    <input type="text" id="input4" class="input" name="words" placeholder="noun">
+                    <input type="text" id="input4" class="input" name="words" placeholder="noun" required>
                 </li>
                 <li>
-                    <input type="text" id="input5" class="input" name="words" placeholder="adjective">
+                    <input type="text" id="input5" class="input" name="words" placeholder="adjective" required>
                 </li>
                 <li>
-                    <input type="text" id="input6" class="input" name="words" placeholder="name">
+                    <input type="text" id="input6" class="input" name="words" placeholder="name" required>
                 </li>
                 <li>
-                    <input type="text" id="input7" class="input" name="words" placeholder="adjective">
+                    <input type="text" id="input7" class="input" name="words" placeholder="adjective" required>
                 </li>
                 <li>
-                    <input type="text" id="input8" class="input" name="words" placeholder="creature">
+                    <input type="text" id="input8" class="input" name="words" placeholder="creature" required>
                 </li>
                 <li>
-                    <input type="text" id="input9" class="input" name="words" placeholder="noun">
+                    <input type="text" id="input9" class="input" name="words" placeholder="noun" required>
                 </li>
                 <li>
-                    <input type="text" id="input10" class="input" name="words" placeholder="adjective">
+                    <input type="text" id="input10" class="input" name="words" placeholder="adjective" required>
                 </li>
                 <li>
-                    <input type="text" id="input11" class="input" name="words" placeholder="plural noun">
+                    <input type="text" id="input11" class="input" name="words" placeholder="plural noun" required>
                 </li>
             </ol>
         </form>
+        <button id="generate1">Generate Story!</button>
     </section>
 
-    <p id="generate1">generate story!</p>
+    <section id="story-part" class="hidden">
+        <h2>Your Crazy Dream Story:</h2>
+        <p id="storyText"></p>
+        <button id="generateAnother">Generate Another Story!</button>
+    </section>
 
+    
 </body>
 </html>
