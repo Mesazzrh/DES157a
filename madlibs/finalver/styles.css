@@ -181,7 +181,7 @@ form li {
 }
 
 #story-part h2 {
-    margin-top: 100px;
+    margin-top: 9%;
     font-size: 30px;
 }
 
@@ -190,7 +190,7 @@ form li {
     color: black;
     width: 50%;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 3%;
     position: relative;
     z-index: 1;
     font-size: 21px;
