@@ -36,6 +36,14 @@
         document.querySelector('#generateBtnWcloud').classList.remove('hidden');
     });
 
-    
+    const starsContainer = document.querySelector('#stars-container');
+    for (let i = 1; i <= 20; i++) {
+        const star = document.createElement('img');
+        star.src = 'images/star.svg';
+        star.style.position = 'absolute';
+        star.style.top = `${Math.random() * 90}%`;
+        star.style.left = `${Math.random() * 90}%`;
+        starsContainer.appendChild(star);
+    }
 
 })();
