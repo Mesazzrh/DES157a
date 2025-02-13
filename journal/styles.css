@@ -68,3 +68,9 @@ article {
     width: 80%;
     margin: 50px auto;
 }
+
+time {
+    font-family: "Expletus Sans", serif;
+    color: #666;
+    font-size: 0.9rem;
+}
