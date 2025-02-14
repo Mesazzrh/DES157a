@@ -13,10 +13,12 @@ a {
     color: rgb(255, 111, 0);
     font-family: "Expletus Sans", serif;
     font-weight: 500;
+    line-height: 1.5;
 }
 
 body {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: auto;
 }
 
@@ -29,12 +31,33 @@ h1 {
 }
 
 nav {
-    margin-top: 52px;
+    margin-top: 3rem;
     flex: 1;
 }
 
 nav li {
     margin-bottom: 20px;
+}
+
+nav ul li a {
+    position: relative;
+    padding-bottom: 2px;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 111, 0);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
 }
 
 main {
@@ -73,4 +96,35 @@ time {
     font-family: "Expletus Sans", serif;
     color: #666;
     font-size: 0.9rem;
+    display: block;
+    margin-top: 20px;
+    text-align: right;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+time:hover {
+    opacity: 1;
+}
+
+#post4 img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+figure {
+    margin: 20px 0;
+}
+
+figcaption {
+    font-family: "Expletus Sans", serif;
+    font-size: 0.875rem;
+    color: #666;
+    margin-top: 10px;
+    text-align: center;
 }
