@@ -128,3 +128,48 @@ figcaption {
     margin-top: 10px;
     text-align: center;
 }
+
+section {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 0;
+    position: relative;
+}
+
+section img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+
+section p {
+    font-family: "Exo 2", serif;
+    width: 38%;
+    position: absolute;
+    bottom: 11%;
+    left: 6%;
+    background-color: rgb(255, 190, 91);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.5);
+}
+
+header {
+    position: relative;
+}
+
+header h1 {
+    position: relative;
+    z-index: 2;
+}
+
+#horiz-bar {
+    width: 100%;
+    max-width: 700px;
+    height: 30px;
+    background-color: rgb(255, 190, 91, 0.7);
+    position: absolute;
+    z-index: 1;
+    bottom: 10%;
+    left: 7%;
+}
