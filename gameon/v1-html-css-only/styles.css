@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #000;
+    text-shadow: 0px 3px 0px #FFF;
+    font-family: "Kirang Haerang";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+body {
+    background-color: #FFC5C6;
+    width: 1200px;
+    height: 750px;
+    margin: 0 auto;
+    position: relative;
+}
+
+button {
+    color: #000;
+    text-shadow: 0px 3px 0px #FFF;
+    font-family: "Kirang Haerang";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: none;
+    border: none;
+}
+
+#eyes {
+    position: relative;
+    width: 800px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+#left-eye, #right-eye {
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+#left-eye {
+    left: 100px;
+}
+
+#right-eye {
+    right: 100px;
+}
+
+.base-circle {
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    background-color: white;
+    /* position: relative; */
+}
+
+.sec-circle {
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#nose {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.nose-shape {
+    width: 349px;
+    height: 140px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #FF9A9C;
+    box-shadow: 0px 5px 20px 0px #FF9A9C;
+    margin: auto;
+    position: relative;
+}
+
+#start-game {
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    cursor: pointer;
+}
+
+#mouth img {
+    margin: auto;
+    display: block;
+}
