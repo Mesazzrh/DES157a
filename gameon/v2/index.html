@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS Only - Game On</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>THE GAME OF PIG</h1>
+    <section id="eyes">
+        <div id="left-eye">
+            <div class="base-circle"></div>
+            <div class="pupil">
+                <div class="sec-circle"></div>
+                <div class="third-circle"></div>
+            </div>
+        </div>
+        <div id="right-eye">
+            <div class="base-circle"></div>
+            <div class="pupil">
+                <div class="sec-circle"></div>
+                <div class="third-circle"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nose">
+        <article class="nose-shape">
+            <button id="start-game">Start Game</button>
+        </article>
+
+        <article id="dice-container">
+            <img src="images/nose1.svg" alt="nose 1" id="nose1" class="die">
+            <img src="images/nose2.svg" alt="nose 2" id="nose2" class="die">
+        </article>
+    </section>
+    
+    <section id="mouth-container">
+        <article id="images">
+            <img src="images/mouth.svg" alt="svg for mouth" id="mouth">
+            <img src="images/tooth1.svg" alt="tooth at upper left" id="tooth1">
+            <img src="images/tooth2.svg" alt="tooth at upper right" id="tooth2">
+            <img src="images/teeth3n4.svg" alt="tooth at lower left" id="teeth3n4">
+            <img src="images/teeth5n6.svg" alt="tooth at lower right" id="teeth5n6">
+            <div id="droolNtext">
+                <img src="images/drool.svg" alt="drool" id="drool">
+                <p>First to 30 wins</p>
+            </div>
+        </article>
+        
+        <article id="user-info">
+            <p class="player" id="p1">Player 1</p>
+            <p class="score" id="p1-Score">0</p>
+            <p class="score" id="p2-Score">0</p>
+            <p class="player" id="p2">Player 2</p>
+        </article>
+
+        <article id="rollNpass-btns">
+            <button id="roll-btn">Roll</button>
+            <button id="pass-btn">Pass</button>
+        </article>
+    </section>
+
+    <section id="blush">
+        <div class="blush-left"><img src="images/blush-left.svg" alt="blush on left"></div>
+        <div class="blush-right"><img src="images/blush-right.svg" alt="blush on right"></div>
+    </section>
+
+    <section id="quitNsound-btns">
+        <button id="quit-btn">Quit</button>
+        <button id="sound-btn">Sound</button>
+    </section>
+
+    <footer>
+        <p>Created by Ruihong Zhou</p>
+    </footer>
+</body>
+</html>
