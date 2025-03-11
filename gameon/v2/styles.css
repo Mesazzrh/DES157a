@@ -141,6 +141,18 @@ button {
     display: block;
 }
 
+body>p {
+    text-align: center;
+    width: 400px;
+    font-size: 20px;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: overlay;
+    display: block;
+}
+
 #mouth-container {
     width: 100%;
     max-width: 600px;
@@ -230,14 +242,14 @@ button {
     transform: rotate(-25deg);
 }
 
-#p1-Score {
+#p1-score {
     position: absolute;
     top: 65%;
     left: 36.5%;
     transform: rotate(14deg);
 }
 
-#p2-Score {
+#p2-score {
     position: absolute;
     top: 68%;
     right: 36.3%;
