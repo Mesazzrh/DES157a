@@ -1,17 +1,8 @@
-*{
+/* Reset and Global Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-h1 {
-    color: #000;
-    text-shadow: 0px 3px 0px #FFF;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: center;
 }
 
 body {
@@ -21,6 +12,17 @@ body {
     margin: 0 auto;
     position: relative;
     font-family: "Kirang Haerang";
+}
+
+/* Typography */
+h1 {
+    color: #000;
+    text-shadow: 0px 3px 0px #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
 }
 
 button {
@@ -34,6 +36,7 @@ button {
     border: none;
 }
 
+/* Eyes Section */
 #eyes {
     position: relative;
     width: 800px;
@@ -65,7 +68,15 @@ button {
     height: 104px;
     border-radius: 50%;
     background-color: white;
-    /* position: relative; */
+}
+
+.pupil {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .sec-circle {
@@ -89,15 +100,7 @@ button {
     left: 50%;
 }
 
-.pupil {
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
+/* Nose Section */
 #nose {
     position: relative;
     margin-top: 30px;
@@ -139,9 +142,30 @@ button {
     opacity: 1;
     cursor: pointer;
     display: block;
+    transition: transform 0.3s ease;
 }
 
-body>p {
+#start-game:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+#startOver {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#startOver:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* Instructions */
+body > p {
     text-align: center;
     width: 400px;
     font-size: 20px;
@@ -153,6 +177,7 @@ body>p {
     display: block;
 }
 
+/* Mouth Section */
 #mouth-container {
     width: 100%;
     max-width: 600px;
@@ -169,18 +194,6 @@ body>p {
     position: relative;
 }
 
-#tooth1 {
-    position: absolute;
-    top: 17.2%;
-    left: 28%;
-}
-
-#tooth2 {
-    position: absolute;
-    top: 16.9%;
-    right: 29%;
-}
-
 #teeth3n4 {
     position: absolute;
     bottom: 12.3%;
@@ -193,31 +206,70 @@ body>p {
     right: 15%;
 }
 
+#drool {
+    position: absolute;
+    bottom: -41%;
+    left: 43.5%;
+}
+
+#droolNtext p {
+    text-align: center;
+    z-index: 1;
+    width: 50px;
+    font-size: 19px;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+/* Roll and Pass Buttons */
 #rollNpass-btns {
     width: 100%;
-    max-width: 250px;
+    max-width: 300px;
     height: 60px;
     position: absolute;
-    top: 20%;
+    top: 31%;
     left: 50%;
-    transform: translate(-50%, 0%);
-    display: none;
+    transform: translate(-50%, -50%);
 }
 
 #roll-btn {
     position: absolute;
-    top: 0;
-    left: 10%;
+    top: 2px;
+    left: 14px;
+    transform-origin: top;
+    transition: transform 0.3s ease;
+}
+
+#roll-btn button {
     transform: rotate(8deg);
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    font-size: 35px;
+    display: none;
 }
 
 #pass-btn {
     position: absolute;
-    top: 0;
-    right: 5%;
-    transform: rotate(-10deg);
+    top: 2px;
+    right: 25px;
+    transform-origin: top;
+    transition: transform 0.3s ease;
 }
 
+#pass-btn button {
+    transform: rotate(-10deg);
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    font-size: 35px;
+    display: none;
+}
+
+/* User Info */
 #user-info {
     display: none;
     width: 100%;
@@ -256,6 +308,7 @@ body>p {
     transform: rotate(-14deg);
 }
 
+/* Blush Section */
 .blush-left {
     position: absolute;
     top: 50%;
@@ -268,24 +321,7 @@ body>p {
     right: 5%;
 }
 
-#drool {
-    position: absolute;
-    bottom: -41%;
-    left: 43.5%;
-}
-
-#droolNtext p {
-    text-align: center;
-    z-index: 1;
-    width: 50px;
-    font-size: 19px;
-    position: absolute;
-    top: 110%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-}
-
+/* Quit and Sound Buttons */
 #quitNsound-btns {
     position: absolute;
     bottom: 7%;
@@ -303,8 +339,25 @@ body>p {
     background: #FEE;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
+#quit-btn:hover, #sound-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Game Message */
+#gameMsg {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    width: 700px;
+    text-align: center;
+}
+
+/* Footer */
 footer {
     position: absolute;
     bottom: 0;

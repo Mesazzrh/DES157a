@@ -31,14 +31,15 @@
     </section>
 
     <section id="nose">
-        <article class="nose-shape">
+        <div class="nose-shape">
             <button id="start-game">Start Game</button>
-        </article>
+            <button id="startOver">Start a New Game</button>
+        </div>
 
-        <article id="dice-container">
+        <div id="dice-container">
             <img src="images/nose1.svg" alt="nose 1" id="nose1" class="die">
             <img src="images/nose2.svg" alt="nose 2" id="nose2" class="die">
-        </article>
+        </div>
     </section>
     
     <p>Randomly chooses a player to start first</p>
@@ -46,8 +47,7 @@
     <section id="mouth-container">
         <article id="images">
             <img src="images/mouth.svg" alt="svg for mouth" id="mouth">
-            <img src="images/tooth1.svg" alt="tooth at upper left" id="tooth1">
-            <img src="images/tooth2.svg" alt="tooth at upper right" id="tooth2">
+            
             <img src="images/teeth3n4.svg" alt="tooth at lower left" id="teeth3n4">
             <img src="images/teeth5n6.svg" alt="tooth at lower right" id="teeth5n6">
             <div id="droolNtext">
@@ -56,17 +56,23 @@
             </div>
         </article>
         
-        <article id="user-info">
+        <div id="user-info">
             <p class="player" id="p1">Player 1</p>
             <p class="score" id="p1-score">0</p>
             <p class="score" id="p2-score">0</p>
             <p class="player" id="p2">Player 2</p>
-        </article>
+        </div>
 
-        <article id="rollNpass-btns">
-            <button id="roll-btn">Roll</button>
-            <button id="pass-btn">Pass</button>
-        </article>
+        <div id="rollNpass-btns">
+            <div id="roll-btn">
+                <img src="images/tooth1.svg" alt="tooth at upper left" id="tooth1">
+                <button>ROLL</button>
+            </div>
+            <div id="pass-btn">
+                <img src="images/tooth2.svg" alt="tooth at upper right" id="tooth2">
+                <button>PASS</button>
+            </div>
+        </div>
     </section>
 
     <section id="blush">
@@ -76,8 +82,10 @@
 
     <section id="quitNsound-btns">
         <button id="quit-btn">Quit</button>
-        <button id="sound-btn">Sound</button>
+        <button id="sound-btn">Mute</button>
     </section>
+
+    <div id="gameMsg"></div>
 
     <footer>
         <p>Created by Ruihong Zhou</p>
