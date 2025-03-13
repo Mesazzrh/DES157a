@@ -66,6 +66,7 @@
         }
         for (const eachDiv of divInrollNpassBtns) {
             eachDiv.style.cursor = 'pointer';
+            eachDiv.style.pointerEvents = 'auto';
         }
 
         gameData.index = Math.floor(Math.random() * 2);
@@ -87,6 +88,7 @@
         }
         for (const eachDiv of divInrollNpassBtns) {
             eachDiv.style.cursor = 'default';
+            eachDiv.style.opacity = '1';
         }
         gameMsg.style.display = 'none';
         startOverBtn.style.display = 'none';
@@ -172,9 +174,10 @@
             eachDiv.style.cursor = 'pointer';
             eachDiv.style.pointerEvents = 'auto';
         }
-        gameMsg.innerHTML = '';
         startOverBtn.style.display = 'none';
         diceContainer.style.display = 'flex';
+        gameData.index = Math.floor(Math.random() * 2);
+        gameMsg.innerHTML = `${gameData.players[gameData.index]} starts!`;
     }
 
     // Button Click Effect
